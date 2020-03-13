@@ -1,0 +1,5 @@
+---
+- name: Configure lab base interface configs
+  hosts: all
+  roles:
+    - role: network_interface_configuration 
