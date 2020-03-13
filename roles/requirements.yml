@@ -1,0 +1,3 @@
+- src: https://github.com/marccolburn/ovirt_create_vms.git
+- src: https://github.com/marccolburn/ovirt_create_networks.git
+- src: https://github.com/marccolburn/ovirt_create_vnic_profiles.git

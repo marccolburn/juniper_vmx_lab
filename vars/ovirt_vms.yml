@@ -1,0 +1,464 @@
+---
+cluster: Default
+vmx_vcp_template: vmx_18_2_vcp_template1
+vmx_fcp_template: vmx_18_2_fcp_template1
+virtual_machines:
+  - name: vmx1_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx1_internal/promisc'
+
+  - name: vmx1_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx1_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'vmx1_clients'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx2_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx2_internal/promisc'
+
+  - name: vmx2_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx2_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx3_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx3_internal/promisc'
+
+  - name: vmx3_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx3_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx4_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx4_internal/promisc'
+
+  - name: vmx4_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx4_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx5_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx5_internal/promisc'
+
+  - name: vmx5_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx5_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx6_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx6_internal/promisc'
+
+  - name: vmx6_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx6_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx7_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx7_internal/promisc'
+
+  - name: vmx7_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx7_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx8_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx8_internal/promisc'
+
+  - name: vmx8_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx8_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'vmx8_clients'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx9_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx9_internal/promisc'
+
+  - name: vmx9_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx9_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'vmx9_clients'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'
+
+  - name: vmx10_vcp
+    template: "{{ vmx_vcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx10_internal/promisc'
+
+  - name: vmx10_fcp
+    template: "{{ vmx_fcp_template }}"
+    cluster: "{{ cluster }}"
+    nics:
+      - name: nic1
+        interface: e1000
+        profile_name: 'vm_outside'
+      - name: nic2
+        interface: e1000
+        profile_name: 'vmx10_internal/promisc'
+      - name: nic3
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic4
+        interface: virtio
+        profile_name: 'vmx10_clients'
+      - name: nic5
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic6
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic7
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic8
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic9
+        interface: virtio
+        profile_name: 'net_lab_int'
+      - name: nic10
+        interface: virtio
+        profile_name: 'net_lab_int'

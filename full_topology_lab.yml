@@ -1,0 +1,16 @@
+---
+- name: Create Full Topology
+  hosts: all
+  vars_files:
+    - vars/ovirt_networks.yml
+    - vars/ovirt_vms.yml
+  pre_tasks:
+    - name: Authenticate to oVirt
+      ovirt_auth:
+        state: present
+  roles:
+    - role: ovirt_create_networks
+    - role: ovirt_create_vnic_profiles
+    - role: ovirt_create_vms
+      vars:
+        state: running

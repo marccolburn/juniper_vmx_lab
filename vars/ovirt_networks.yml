@@ -1,0 +1,169 @@
+---
+network_names:
+  - vmx1_internal
+  - vmx2_internal
+  - vmx3_internal
+  - vmx4_internal
+  - vmx5_internal
+  - vmx6_internal
+  - vmx7_internal
+  - vmx8_internal
+  - vmx9_internal
+  - vmx10_internal
+  - vmx1_clients
+  - vmx8_clients
+  - vmx9_clients
+  - vmx10_clients
+
+datacenter: "Default"
+cluster: "Default"
+
+vm_networks:
+  - name: "{{ network_names[0] }}"
+    vlan: 181
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[1] }}"
+    vlan: 182
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[2] }}" 
+    vlan: 183
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[3] }}" 
+    vlan: 184
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[4] }}" 
+    vlan: 185
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[5] }}" 
+    vlan: 186
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[6] }}" 
+    vlan: 187
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[7] }}" 
+    vlan: 188
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[8] }}" 
+    vlan: 189
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[9] }}" 
+    vlan: 190
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[10] }}" 
+    vlan: 172
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[11] }}" 
+    vlan: 170
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[12] }}" 
+    vlan: 171
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+  - name: "{{ network_names[13] }}" 
+    vlan: 169
+    datacenter: "{{ datacenter }}"
+    clusters:
+      - name: "{{ cluster }}"
+
+ovirt_hosts:
+  - name: ovirt4.mclab.com
+    interface: "eno3"
+    networks:
+      - name: "{{ network_names[0] }}" 
+      - name: "{{ network_names[1] }}"
+      - name: "{{ network_names[2] }}"
+      - name: "{{ network_names[3] }}"
+      - name: "{{ network_names[4] }}"
+      - name: "{{ network_names[5] }}"
+      - name: "{{ network_names[6] }}"
+      - name: "{{ network_names[7] }}"
+      - name: "{{ network_names[8] }}"
+      - name: "{{ network_names[9] }}"
+      - name: "{{ network_names[10] }}"
+      - name: "{{ network_names[11] }}"
+      - name: "{{ network_names[12] }}"
+      - name: "{{ network_names[13] }}"
+  - name: ovirt5.mclab.com
+    interface: "eno3"
+    networks:
+      - name: "{{ network_names[0] }}" 
+      - name: "{{ network_names[1] }}"
+      - name: "{{ network_names[2] }}"
+      - name: "{{ network_names[3] }}"
+      - name: "{{ network_names[4] }}"
+      - name: "{{ network_names[5] }}"
+      - name: "{{ network_names[6] }}"
+      - name: "{{ network_names[7] }}"
+      - name: "{{ network_names[8] }}"
+      - name: "{{ network_names[9] }}"
+      - name: "{{ network_names[10] }}"
+      - name: "{{ network_names[11] }}"
+      - name: "{{ network_names[12] }}"
+      - name: "{{ network_names[13] }}"
+
+vnic_profiles:
+  - name: promisc
+    network: "{{ network_names[0] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[1] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[2] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[3] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[4] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[5] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[6] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[7] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[8] }}"
+    datacenter: "Default"
+    network_filter: 'null'
+  - name: promisc
+    network: "{{ network_names[9] }}"
+    datacenter: "Default"
+    network_filter: 'null'
