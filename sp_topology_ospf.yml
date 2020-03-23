@@ -1,0 +1,5 @@
+---
+- name: Configure OSPF single area in SP
+  hosts: all
+  roles:
+    - role: network_ospf_configuration
