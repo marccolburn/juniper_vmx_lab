@@ -1,0 +1,5 @@
+---
+- name: Configure SP topology with LDP
+  hosts: all
+  roles:
+    - role: network_ldp_configuration
