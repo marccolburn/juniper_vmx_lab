@@ -1,0 +1,5 @@
+---
+- name: Configure Policies
+  hosts: all
+  roles:
+    - role: junos_policy_configuration
