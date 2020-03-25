@@ -5,3 +5,4 @@
 - src: https://github.com/marccolburn/network_ospf_configuration.git
 - src: https://github.com/marccolburn/network_ldp_configuration.git
 - src: https://github.com/marccolburn/junos_policy_configuration.git
+- src: https://github.com/marccolburn/network_l3vpn_pe_config.git

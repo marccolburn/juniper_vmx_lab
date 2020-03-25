@@ -1,0 +1,5 @@
+---
+- name: Configure L3VPN on PEs
+  hosts: all
+  roles:
+    - role: network_l3vpn_pe_config
