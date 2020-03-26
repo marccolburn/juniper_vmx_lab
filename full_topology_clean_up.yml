@@ -1,0 +1,5 @@
+---
+- name: Cleanup vMX lab
+  hosts: all
+  roles:
+    - role: juniper_vmx_lab_cleanup
